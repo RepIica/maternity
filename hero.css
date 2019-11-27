@@ -70,7 +70,7 @@
   .hero h1 {
     font-size: 52px;
     width: 100%;
-    max-width: 550px;
+    max-width: 575px;
   }
   .hero p {
     font-size: 15px;
@@ -102,6 +102,11 @@
     height: 80px;
     margin: 0 4px;
     font-family: Arial-bold;
+    cursor: pointer;
+    transition: background 300ms ease;
+  }
+  .hero menu li:hover {
+    background: #cf69ab;
   }
   .hero menu li:first-child {
     background: #cf69ab;

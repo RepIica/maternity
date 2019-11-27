@@ -43,6 +43,11 @@ button {
   font-size: 24px;
   text-transform: uppercase;
   margin: 10px 0;
+  cursor: pointer;
+  transition: opacity 300ms ease;
+}
+button:hover {
+  opacity: 0.6;
 }
 .sub-header {
   color: #cf69ab;

@@ -3,13 +3,21 @@
   padding-top: 35px;
 }
 .trimester span,
-.trimester .sub-header {
+.trimester .sub-header,
+.trimester-menu-item {
   font-family: Arial-bold;
 }
 .trimester .sub-header {
   text-transform: uppercase;
   font-size: 17px;
   margin: 0;
+}
+.trimester-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
 }
 .trimester h2 {
   text-transform: uppercase;
@@ -54,8 +62,13 @@
   bottom: -11px;
   right: -11px;
 }
+.trimester-img2,
+menu {
+  display: none;
+}
 .thumbnail-container {
   width: 80%;
+  max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -73,5 +86,140 @@
   }
   .trimester p {
     font-size: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .trimester {
+    padding-bottom: 30px;
+  }
+  .trimester .btn,
+  .trimester.post .sub-header {
+    display: none;
+  }
+  .trimester h2 {
+    width: auto;
+    max-width: 80%;
+  }
+  .trimester menu {
+    display: block;
+    margin: 35px 0;
+  }
+  .trimester menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .trimester-menu-item {
+    text-transform: uppercase;
+    color: #cf69ab;
+    margin: 0 20px;
+    letter-spacing: 0.07em;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .trimester-menu-item::after {
+    content: "";
+    position: absolute;
+    background: #cf69ab;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -2px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+  .trimester-menu-item:hover:after {
+    opacity: 1;
+  }
+  .trimester p {
+    width: 39%;
+    max-width: 484px;
+    line-height: 1.5;
+    font-size: 18px;
+    text-align: left;
+  }
+  .trimester .sub-header {
+    text-align: center;
+  }
+  .trimester-inner {
+    position: relative;
+    width: 100%;
+    max-width: 825px;
+    /* height: 80vh; */
+    height: 775px;
+    /* padding-top: 30px; */
+  }
+  .trimester-inner p,
+  .trimester-img,
+  .trimester-img2 {
+    position: absolute;
+  }
+  .trimester-inner p {
+    left: 0;
+    font-size: 16px;
+  }
+  .trimester-img {
+    margin: 0;
+    right: 0;
+    left: auto;
+    /* height: 75vh;
+    width: 50vh; */
+    height: 730px;
+    width: 488px;
+  }
+  .trimester-img2 {
+    display: block;
+    background-size: cover;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    /* height: 48vh; */
+    /* width: 35vh; */
+    height: 562px;
+    width: 358px;
+    z-index: -1;
+  }
+  .trimester.first .trimester-img2::after,
+  .third-trimester-img::after {
+    content: none;
+  }
+  .trimester.second .trimester-inner p {
+    width: 30%;
+    right: 0;
+    left: auto;
+  }
+  .trimester.second .trimester-img {
+    left: 0;
+    right: auto;
+    z-index: -1;
+  }
+  .trimester.second .trimester-img::after {
+    background: none;
+  }
+  .trimester.second .trimester-img2 {
+    right: 0;
+    left: auto;
+    z-index: auto;
+  }
+  .trimester.second .trimester-img2::after {
+    background: #ebb0c4;
+    z-index: -1;
+  }
+  .trimester.third .trimester-img2 {
+    z-index: auto;
+  }
+  .third-trimester-img {
+    z-index: -1;
+  }
+  .trimester.third .trimester-img2::after {
+    width: 76%;
+    top: auto;
+    left: 44px;
+    bottom: -9px;
+  }
+  .thumbnail p {
+    width: 100%;
+    text-align: center;
   }
 }
