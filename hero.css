@@ -1,0 +1,117 @@
+.hero {
+  background: url("./images/banner-mobile.jpg") center no-repeat;
+  background-size: cover;
+  height: 100vw;
+}
+.hero--header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  margin-bottom: 30px;
+}
+.hero h1,
+.hero p {
+  width: 50%;
+  text-align: center;
+}
+.hero h1 {
+  padding: 0 3%;
+  font-size: 5.625vw;
+  line-height: 1;
+}
+.hero p {
+  padding: 0 5%;
+}
+.hero h1 span {
+  font-family: Arial-bold;
+  letter-spacing: 0.05em;
+}
+.hero--desktop-btn {
+  display: none;
+  font-size: 16px;
+  min-height: 40px;
+  width: 35%;
+  border-width: 2px;
+}
+.hero menu {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .hero {
+    background: url("./images/banner-background.jpg") right center no-repeat;
+    background-size: cover;
+    height: 560px;
+    background-color: #fff9f1;
+    width: calc(100% - 64px);
+    margin: 0 auto;
+    align-items: flex-start;
+    max-width: 1300px;
+  }
+  .hero--header {
+    align-items: center;
+    width: 70%;
+    min-height: calc(100% - 80px);
+    margin: 0;
+  }
+  .hero-header .btn:nth-child(2) {
+    margin-bottom: 0;
+  }
+  .hero h1 {
+    font-size: 52px;
+    width: 100%;
+    max-width: 550px;
+  }
+  .hero p {
+    font-size: 15px;
+    width: 100%;
+    max-width: 490px;
+  }
+  .hero .sub-header {
+    margin: 28px 0;
+  }
+  .hero--desktop-btn {
+    display: block;
+  }
+  .hero--btn {
+    display: none;
+  }
+  .hero menu {
+    display: block;
+    width: 100%;
+  }
+  .hero menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .hero menu li {
+    background: #ebb0c4;
+    color: white;
+    width: 226px;
+    height: 80px;
+    margin: 0 4px;
+    font-family: Arial-bold;
+  }
+  .hero menu li:first-child {
+    background: #cf69ab;
+    position: relative;
+  }
+  .hero menu li:first-child::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    bottom: -11px;
+    left: 45%;
+    transform: rotate(45deg) skew(-5deg, -5deg);
+    background: #cf69ab;
+  }
+  .hero menu p {
+    margin: 5px 0 0;
+  }
+  .hero menu p:first-child {
+    text-transform: uppercase;
+    margin: 20px 0 0;
+  }
+}
