@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Arial";
+  font-family: "Arial-bold-it";
   src: url("./fonts/Arial-BoldItalicMT.woff2") format("woff2"),
     url("./fonts/Arial-BoldItalicMT.woff") format("woff");
   font-weight: bold;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "Arial";
+  font-family: "Arial-it";
   src: url("./fonts/Arial-ItalicMT.woff2") format("woff2"),
     url("./fonts/Arial-ItalicMT.woff") format("woff");
   font-weight: normal;
