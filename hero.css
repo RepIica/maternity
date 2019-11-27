@@ -1,3 +1,6 @@
+.hero {
+  margin-top: 0;
+}
 .hero .background {
   background: url("./images/banner-mobile.jpg") center no-repeat;
   background-size: cover;

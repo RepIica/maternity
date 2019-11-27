@@ -1,0 +1,51 @@
+.blog {
+  padding-top: 35px;
+  text-align: center;
+}
+.blog h2 {
+  text-transform: uppercase;
+  font-size: 44px;
+  width: 450px;
+  max-width: 80%;
+  line-height: 1;
+}
+.blog span {
+  display: block;
+  font-family: Arial-bold;
+}
+.blog p {
+  width: 85%;
+  font-size: 18px;
+}
+.blog-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fdf4f7;
+  padding: 35px 0;
+}
+.blog-article h5 {
+  font-family: Arial-bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.blog-article p {
+  font-size: 20px;
+}
+.blog-img {
+  height: 600px;
+  width: 80%;
+  background: #9a9a9a;
+}
+@media (min-width: 500px) {
+  .blog h2 {
+    font-size: 64px;
+  }
+  .blog p {
+    font-size: 22px;
+  }
+  .blog-article p {
+    font-size: 28px;
+  }
+}

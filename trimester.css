@@ -1,0 +1,77 @@
+.trimester {
+  text-align: center;
+  padding-top: 35px;
+}
+.trimester span,
+.trimester .sub-header {
+  font-family: Arial-bold;
+}
+.trimester .sub-header {
+  text-transform: uppercase;
+  font-size: 17px;
+  margin: 0;
+}
+.trimester h2 {
+  text-transform: uppercase;
+  font-size: 44px;
+  width: 450px;
+  max-width: 80%;
+  line-height: 1;
+}
+.trimester p {
+  width: 70%;
+  font-size: 18px;
+}
+.trimester-img {
+  width: 72%;
+  height: 108vw;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 30px;
+}
+.trimester-img::after {
+  position: absolute;
+  content: "";
+  width: 10%;
+  height: 96%;
+  top: 5px;
+  left: -11px;
+  z-index: -1;
+  background: #ebb0c4;
+}
+.trimester.second,
+.trimester.post {
+  background: #fdf4f7;
+  padding-bottom: 30px;
+}
+.trimester.second .trimester-img::after {
+  width: 60%;
+  height: 96%;
+  left: auto;
+  top: auto;
+  bottom: -11px;
+  right: -11px;
+}
+.thumbnail-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.thumbnail p {
+  color: #cf69ab;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  width: 100%;
+}
+@media (min-width: 500px) {
+  .trimester h2 {
+    font-size: 64px;
+  }
+  .trimester p {
+    font-size: 22px;
+  }
+}
